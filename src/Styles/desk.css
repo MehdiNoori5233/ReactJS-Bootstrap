@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+}
+
+::selection{
+    background:tomato;
+    border-radius: 100% ;
+    color : white ;
+}
+
+.persian-type{
+    text-align: right;
+    direction: rtl;
+}
+
+.card{
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    padding : 16px;
+    margin-bottom : 20px; 
+}
+
+/* .card:hover{
+    transition : transform 1s;
+    transform : scale(1.1,1.1);
+    z-index: 1;
+} */
+
+.center-align{
+    text-align: center !important;
+}
+.justify-align{
+    text-align: justify !important;
+}
+.left-align{
+    text-align: left !important;
+}
+.right-align{
+    text-align: right !important;
+}
+
+.relative{
+    position: relative;
+}
+.static-top{
+    position: static;
+    top: 0;
+    padding: 5px;
+}
+.fixed{
+    position: fixed;
+}
+.absolute{
+    position: absolute;
+}
+.sticky{
+    position: sticky;
+}
+
+.vr-margin-1{
+    margin: 1px 0px!important;
+}
+
+
+.vr-margin-5{
+    margin: 16px 0px!important;
+}
+
+li , button [class*="fa"] {
+    padding : 0 30px;
+    color:gray;
+}
+.hide {
+    display : none;
+}
+
+.scroll-box-hoverable {
+    height : 300px;
+    overflow: hidden;
+}
+
+.scroll-box-hoverable:hover {
+    overflow-y: scroll;
+}
+#subscriber > *:hover {
+    background-color:#becbd2;
+}
+
+
+.block {display:block;width:100%}
+.inline {display:inline;}
+.inline-block {display:inline-block;}
+
+.button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;
+    text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+/* -------------------------------------------------------------- */
+.profile-circle {
+    border-radius: 50%;
+    height: 100px;
+    transition-property: transform;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+    transition-delay: 0;  
+  }
+.profile-circle:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.profile-square {
+    border-radius: 5px 5px;
+    height: 40px;
+    margin : 20px 5px 20px 20px; 
+    transition-property: transform;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+    transition-delay: 0;  
+  }
+.profile-square:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.profile-square-big {
+    margin : 20px 5px 20px 20px; 
+    transition-property: transform;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+    transition-delay: 0;  
+  }
+.profile-square-big:hover {
+    transform: scale(1.1, 1.1);
+}
+/*Profile SideBar --------------------------------------------------------------- */
+
+.theme-l1:hover{
+    color: #000!important;
+    background-color: #ccc!important;
+}
+
+/*Profile SideBar --------------------------------------------------------------- */
+.feuilleton{
+    color:#9eb1bb;
+    font-size: 12px;
+}

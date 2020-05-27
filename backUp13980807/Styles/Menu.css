@@ -1,0 +1,211 @@
+/* Customize CSS 0 */
+*{
+  box-sizing: border-box;
+}
+
+ul {
+list-style-type: none;
+margin:  0;
+padding: 0;
+font-family: IRANSans ; 
+ overflow: hidden;
+}
+
+li {
+  font-family: IRANSans ; 
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: normal;
+  src: url('./../Fonts/IRANSansWeb.woff2') format('woff2'),url('./../Fonts/IRANSansWeb.woff') format('woff'),url('./../Fonts/IRANSansWeb.eot'),url('./../Fonts/IRANSansWeb.eot?#iefix') format('eot'),url('./../Fonts/IRANSansWeb.ttf') format('ttf')
+}
+
+/* Customize CSS 0 */
+.megamenu-container {
+  background-color: #fcfcfc;
+  box-shadow: 0 3px 10px rgba(0,0,0,.05)
+}
+
+#megamenu.sticky {
+  overflow: visible;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000
+}
+
+.megamenu {
+  display: block
+}
+
+.megamenu a {
+  display: block
+}
+
+.megamenu__item {
+  padding : 10px;
+  margin : 0 ;
+  float: right;
+}
+
+.megamenu__item>a {
+  position: relative;
+  display: block;
+  padding: 13px 23px;
+  overflow: hidden;
+  cursor: pointer;
+  -moz-transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease; 
+  color:gray;
+}
+
+.megamenu__item:hover>a {
+  background-color: #edecec;
+  color: #ff6f00;
+
+}
+
+.megamenu__item>a:before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+  background: url(/Themes/AlphaGajLight/Content/assets/sprite.png) no-repeat -819px 4px;
+  width: 40px;
+  height: 20px;
+  -moz-transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease
+}
+
+.megamenu__item.active>a:before,.megamenu__item:hover>a:before {
+  bottom: 0
+}
+
+.megamenu__subitem {
+  display: none;
+  position: absolute;
+  top: 53px;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 7px 10px rgba(0,0,0,.15);
+  z-index: 100;
+  padding: 0 15px
+}
+
+.megamenu__item.active .megamenu__subitem,.megamenu__item:hover .megamenu__subitem {
+  display: block;
+}
+
+.megamenu__subitem>li {
+  float: right
+}
+
+.megamenu__subitem>li>a {
+  padding: 0 20px
+}
+
+.megamenu__subitem>li>a>span {
+  display: block;
+  padding: 15px 0;
+  border-bottom: 3px solid transparent
+}
+
+.megamenu__subitem>li:first-child>a {
+  padding-right: 0
+}
+
+.megamenu__subitem>li:hover>a>span,.megamenu__subitem>li.active>a>span {
+  border-color: #bdbebb
+}
+
+.megamenu__subitem>li:hover .megamenu__sub-menus,.megamenu__subitem>li.active .megamenu__sub-menus {
+  display: block;
+}
+
+.megamenu__sub-menus {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 7px 10px rgba(0,0,0,.15);
+  z-index: 100000;
+  min-height: 340px;
+  padding: 15px;
+  border-radius: 0 0 12px 12px;
+  border-top: 1px solid #eae6e6
+}
+
+.megamenu__sub-list {
+  column-count: 4;
+  column-gap: 0;
+  -moz-column-count: 4;
+  -moz-column-gap: 0;
+  -webkit-column-count: 4;
+  -webkit-column-gap: 0;
+  width: 75%;
+  float: right
+}
+
+.megamenu__sub-list.column-count-1 {
+  column-count: 1 !important;
+  column-gap: 0;
+  -moz-column-count: 1 !important;
+  -moz-column-gap: 0;
+  -webkit-column-count: 1 !important;
+  -webkit-column-gap: 0
+}
+
+.megamenu__sub-list>li>a.item-header {
+  color: #ff6f00;
+  position: relative;
+  padding-right: 12px !important;
+  display: block
+}
+
+.megamenu__sub-list>li>a.item-header:before {
+  content: "";
+  font-family: FontAwesome;
+  font-size: 17px;
+  top: -2px;
+  right: 0;
+  position: absolute
+}
+
+.megamenu__sub-list>li>a {
+  padding: 0 0 10px
+}
+
+.megamenu__sub-list>li:hover>a {
+  color: #8fcc1a;
+}
+
+a {
+  color: #6f6f70;
+  text-decoration: none
+}
+
+a:hover,a:focus {
+  color: #49494a;
+  text-decoration: underline
+}
+
+/* -------------------------------------------------------- */
+
+.container {
+  position: relative
+}
